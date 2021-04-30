@@ -1,0 +1,4 @@
+DROP ROLE
+	"TSSTS_MAIN_USER"
+;
+
