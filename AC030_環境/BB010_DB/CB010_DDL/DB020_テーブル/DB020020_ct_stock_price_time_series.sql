@@ -1,3 +1,8 @@
+-- テーブルが存在している場合は削除
+DROP TABLE IF EXISTS stock_price_time_series
+;
+
+-- テーブルの作成
 CREATE TABLE stock_price_time_series (
     id	            SERIAL		        NOT NULL    PRIMARY KEY
 ,   start_date      DATE		        NOT NULL
