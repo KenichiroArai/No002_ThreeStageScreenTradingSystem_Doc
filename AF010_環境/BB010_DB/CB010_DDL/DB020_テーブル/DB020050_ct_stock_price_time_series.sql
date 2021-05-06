@@ -14,6 +14,7 @@ CREATE TABLE stock_price_time_series (
 ,   update_date     DATE                NOT NULL
 ,   note            VARCHAR(1000)
 ,   name            VARCHAR(255)        NOT NULL
+,   stock_brand_id  BIGINT              NOT NULL
 ,   no              BIGINT              NOT NULL
 ,   date            DATE                NOT NULL
 ,   op              DOUBLE PRECISION
