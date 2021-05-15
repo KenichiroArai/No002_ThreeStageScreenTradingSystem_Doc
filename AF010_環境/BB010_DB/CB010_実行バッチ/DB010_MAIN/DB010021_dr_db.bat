@@ -1,0 +1,15 @@
+CALL DB010010_env
+
+ECHO データベースの削除
+PSQL -h %HOST% -p %PORT% -d %DB_ADMIN_NAME% -U %CONN_ADMIN_USER% -f %SQL_DDL_DB_PASS%\DB010023_dd.sql
+
+ECHO.
+
+ECHO ロールの削除
+PSQL -h %HOST% -p %PORT% -d %DB_ADMIN_NAME% -U %CONN_ADMIN_USER% -f %SQL_DDL_DB_PASS%\DB010021_dr.sql
+
+ECHO.
+
+ECHO 終了
+
+PAUSE

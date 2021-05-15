@@ -1,0 +1,15 @@
+CALL DB010010_env
+
+ECHO ロールの作成
+PSQL -h %HOST% -p %PORT% -d %DB_ADMIN_NAME% -U %CONN_ADMIN_USER% -f %SQL_DDL_DB_PASS%\DB010020_cr.sql 
+
+ECHO.
+
+ECHO データベースの作成
+PSQL -h %HOST% -p %PORT% -d %DB_ADMIN_NAME% -U %CONN_ADMIN_USER% -f %SQL_DDL_DB_PASS%\DB010022_cd.sql 
+
+ECHO.
+
+ECHO 終了
+
+PAUSE
