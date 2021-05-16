@@ -13,6 +13,12 @@ PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020
 ECHO - Š”‰¿ŽžŒn—ñ
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020050_ct_stock_price_time_series.sql
 
+ECHO - Š”‰¿T‘«
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020060_ct_stock_price_weekly.sql
+
+ECHO - Š”‰¿ŒŽ‘«
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020070_ct_stock_price_monthly.sql
+
 ECHO.
 
 ECHO I—¹
