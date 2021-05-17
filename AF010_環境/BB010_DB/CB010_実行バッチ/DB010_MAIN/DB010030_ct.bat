@@ -19,6 +19,17 @@ PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020
 ECHO - 株価月足
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020070_ct_stock_price_monthly.sql
 
+ECHO - シミュレーション明細
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020080_ct_simulation_details.sql
+ECHO - シミュレーション明細のインデックス
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020081_ci_simulation_details.sql
+
+ECHO - コード種類
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020090_ct_code_kind.sql
+
+ECHO - コード値
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020100_ct_code_value.sql
+
 ECHO.
 
 ECHO 終了
