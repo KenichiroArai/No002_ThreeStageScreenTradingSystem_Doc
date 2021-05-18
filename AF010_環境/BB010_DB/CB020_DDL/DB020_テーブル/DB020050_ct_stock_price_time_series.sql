@@ -22,4 +22,10 @@ CREATE TABLE stock_price_time_series (
 ,   lp              DOUBLE PRECISION
 ,   cp              DOUBLE PRECISION
 ,   volume          BIGINT
+,   mcadl           DOUBLE PRECISION
+,   mcads           DOUBLE PRECISION
+,   mcadh           DOUBLE PRECISION
+,   pi              DOUBLE PRECISION
+,   pi2ema          DOUBLE PRECISION
+,   pi13ema         DOUBLE PRECISION
 );
