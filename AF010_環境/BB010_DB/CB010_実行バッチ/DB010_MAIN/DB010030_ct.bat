@@ -13,11 +13,8 @@ PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020
 ECHO - 株価時系列
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020050_ct_stock_price_time_series.sql
 
-ECHO - 株価週足
-PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020060_ct_stock_price_weekly.sql
-
-ECHO - 株価月足
-PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020070_ct_stock_price_monthly.sql
+ECHO - 株価計算値
+PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020060_ct_stock_price_calculation_value.sql
 
 ECHO - シミュレーション明細
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DDL_TBL_PASS%\DB020080_ct_simulation_details.sql
