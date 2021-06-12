@@ -13,12 +13,11 @@ CREATE TABLE stock_price_time_series (
 ,   updater             VARCHAR(255)        NOT NULL
 ,   update_date         DATE                NOT NULL
 ,   note                VARCHAR(1000)
-,   name                VARCHAR(255)        NOT NULL
-,   stock_brand_id      BIGINT              NOT NULL
+,   name                VARCHAR (255)       NOT NULL
+,   sptspt_id           BIGINT              NOT NULL
 ,   no                  BIGINT              NOT NULL
-,   type_of_period_id   BIGINT
-,   period_start_date   DATE
-,   period_end_date     DATE
+,   period_start_date   DATE                NOT NULL
+,   period_end_date     DATE                NOT NULL
 ,   op                  DOUBLE PRECISION
 ,   hp                  DOUBLE PRECISION
 ,   lp                  DOUBLE PRECISION
