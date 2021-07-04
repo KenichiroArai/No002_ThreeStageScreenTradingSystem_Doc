@@ -19,7 +19,7 @@ PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DML_PASS%\DA020040_
 ECHO - テクニカル指標
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DML_PASS%\DA020050_insert_tech_indicator.sql
 
-ECHO - テ株価計算値の種類
+ECHO - 株価計算値の種類
 PSQL -h %HOST% -p %PORT% -d %DB_NAME% -U %CONN_USER% -f %SQL_DML_PASS%\DA020060_insert_stock_price_calc_value_type.sql
 
 ECHO.
